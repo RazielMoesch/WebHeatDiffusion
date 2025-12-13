@@ -5,7 +5,7 @@
 
     width: 18vw;
     height: 5vh;
-    background-color: hsl(0, 0%, 85%);
+    background-color: hsl(0, 0%, 95%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
     font-family: var(--main-font);
     width: 20%;
     height: 60%;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 100%);
     border: none;
     border-radius: .3rem;
 

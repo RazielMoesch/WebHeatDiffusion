@@ -1,0 +1,23 @@
+.import-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 9999;
+    min-width: 300px;
+}
+
+.import-popup input {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.import-popup button {
+    margin-right: 0.5rem;
+}

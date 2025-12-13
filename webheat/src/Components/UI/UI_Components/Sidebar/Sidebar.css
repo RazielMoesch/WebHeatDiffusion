@@ -4,7 +4,7 @@
     position: fixed;
     left: var(--sidebar-left);
     top: var(--sidebar-top);
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 80%);
 
     width: var(--sidebar-width);
     height: var(--sidebar-height);
@@ -22,6 +22,7 @@
     font-weight: bold;
     padding: 0;
     margin: 0;
+    margin-top: 5rem;
 
 }
 
@@ -30,4 +31,10 @@
     font-family: var(--main-font);
     font-weight: normal;
 
+}
+
+.sidebar-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

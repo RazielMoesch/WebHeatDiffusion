@@ -13,9 +13,9 @@
   /* Define sidebar props */
   
   --sidebar-left: var(--canvas-width);
-  --sidebar-top: 5vh;
+  --sidebar-top: 0vh;
   --sidebar-width: 20vw;
-  --sidebar-height: 95vh;
+  --sidebar-height: 100vh;
 
 
 
