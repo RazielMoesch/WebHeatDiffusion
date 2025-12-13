@@ -1,0 +1,53 @@
+
+
+.toolbar-container {
+
+    width: var(--toolbar-width);
+    height: var(--toolbar-height);
+    background-color: var(--toolbar-bg);
+    position: fixed;
+    top: var(--toolbar-top);
+    left: var(--toolbar-left);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+
+
+
+}
+
+.webphysics-toolbar-title{
+
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: "sans-serif";
+    padding-right: .5rem;
+    padding-left: .5rem;
+    border-right: 2px solid black;
+    margin-right: .5rem;
+    margin-left: .75rem;
+}
+
+.toolbar-buttons-container {
+
+    display: flex;
+    gap: .5rem;
+}
+
+.toolbar-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+
+}
+
+.button-bar {
+    height: 1.5rem;
+    width: .15rem;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 5rem;
+}
+

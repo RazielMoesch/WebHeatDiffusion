@@ -1,0 +1,36 @@
+:root {
+ 
+  background-color: hsl(0, 0%, 90%);
+/* Define canvas props */
+  --canvas-width: 80vw;
+  --canvas-height: 93vh;
+  --canvas-top: 7vh;
+  --canvas-left: 0vw;
+
+  --canvas-bg: hsl(0, 0%, 90%);
+
+
+  /* Define sidebar props */
+  
+  --sidebar-left: var(--canvas-width);
+  --sidebar-top: 5vh;
+  --sidebar-width: 20vw;
+  --sidebar-height: 95vh;
+
+
+
+  /* Define toolbar props */
+  --toolbar-left: var(--canvas-left);
+  --toolbar-top: 2vh;
+  --toolbar-width: 80vw;
+  --toolbar-height: 4vh;
+  --toolbar-bg: hsl(0, 0%, 90%);
+
+  --toolbar-button-height: 3.5vh;
+
+
+  --main-font: "system-ui";
+
+
+
+}

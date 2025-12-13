@@ -1,0 +1,43 @@
+
+
+
+.sidebar-property-container {
+
+    width: 18vw;
+    height: 5vh;
+    background-color: hsl(0, 0%, 85%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: .75rem;
+
+}
+
+.sidebar-property-container:hover {
+    cursor: text;
+}
+
+.sidebar-property-name {
+    font-size: .9rem;
+}
+
+.sidebar-property-input {
+
+    font-size: .75rem;
+    font-family: var(--main-font);
+    width: 20%;
+    height: 60%;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: .3rem;
+
+
+
+}
+
+.sidebar-property-unit {
+
+    font-size: .75rem;
+
+}

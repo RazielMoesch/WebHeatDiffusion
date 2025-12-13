@@ -1,0 +1,12 @@
+
+.webgpu-canvas {
+
+    width: var(--canvas-width);
+    height: var(--canvas-height);
+    background-color: black;
+    position: fixed;
+    top: var(--canvas-top);
+    left: var(--canvas-left);
+
+}
+

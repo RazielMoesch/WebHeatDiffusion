@@ -1,0 +1,33 @@
+
+
+.sidebar-container {
+    position: fixed;
+    left: var(--sidebar-left);
+    top: var(--sidebar-top);
+    background-color: hsl(0, 0%, 90%);
+
+    width: var(--sidebar-width);
+    height: var(--sidebar-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1rem;
+}
+
+
+.sidebar-title {
+
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sidebar-object-name {
+    font-size: 1.25rem;
+    font-family: var(--main-font);
+    font-weight: normal;
+
+}
