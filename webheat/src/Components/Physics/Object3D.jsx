@@ -21,10 +21,10 @@ class Object3D {
 
         // color info
         this.fragmentShader = null;
-        this.r = null;
-        this.g = null;
-        this.b = null;
-        this.a = null;
+        this.r = .8;
+        this.g = .8;
+        this.b = .8;
+        this.a = 1.0;
 
 
     }
@@ -76,6 +76,7 @@ class Object3D {
     }
 
     computeVoxels(voxelSize = 0.1) {
+        
         const { min, max } = this.aabb;
 
         const nx = Math.ceil((max.x - min.x) / voxelSize);

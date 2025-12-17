@@ -1,30 +1,31 @@
 :root {
  
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsla(0, 0%, 100%, 1);
 /* Define canvas props */
-  --canvas-width: 80vw;
-  --canvas-height: 93vh;
-  --canvas-top: 7vh;
+  --canvas-width: 100vw;
+  --canvas-height: 100vh;
+  --canvas-top: 0vh;
   --canvas-left: 0vw;
 
-  --canvas-bg: hsl(0, 0%, 90%);
+  --canvas-bg: hsl(0, 0%, 50%);
 
 
   /* Define sidebar props */
   
-  --sidebar-left: var(--canvas-width);
-  --sidebar-top: 0vh;
-  --sidebar-width: 20vw;
-  --sidebar-height: 100vh;
+  --sidebar-left: 77vw;
+  --sidebar-top: 15vh;
+  --sidebar-width: max(18vw, 5rem);
+  --sidebar-height: 65vh;
+  
 
 
 
   /* Define toolbar props */
   --toolbar-left: var(--canvas-left);
   --toolbar-top: 2vh;
-  --toolbar-width: 80vw;
+  --toolbar-width: 50vw;
   --toolbar-height: 4vh;
-  --toolbar-bg: hsl(0, 0%, 90%);
+  --toolbar-bg: hsla(0, 0%, 100%, 0);
 
   --toolbar-button-height: 3.5vh;
 

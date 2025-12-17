@@ -3,13 +3,13 @@
 
 .sidebar-property-container {
 
-    width: 18vw;
+    width: 15vw;
     height: 5vh;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 85%);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: .3rem;
     gap: .75rem;
 
 }
@@ -28,7 +28,7 @@
     font-family: var(--main-font);
     width: 20%;
     height: 60%;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 95%);
     border: none;
     border-radius: .3rem;
 

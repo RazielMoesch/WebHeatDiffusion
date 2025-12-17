@@ -4,19 +4,22 @@ import WebGPUCanvas from "./UI_Components/WebGPUCanvas.jsx";
 import Sidebar from "./UI_Components/Sidebar/Sidebar.jsx";
 import SidebarProperty from "./UI_Components/Sidebar/SidebarProperty.jsx";
 import ImportButton from "./ImportButton.jsx";
+import { useState } from "react";
 
-const UI = ({ objects, setObjects }) => {
-    // Manually choose which object to display in sidebar
-    const selectedIndex = 1; // change later based on canvas click
+const UI = ({ objects, setObjects, canvasRef, space }) => {
+    
+    const [importAlert, setImportAlert] = useState(0);
 
-    // Make sure there is an object at the selected index
+    
+    const selectedIndex = 0; 
+
     const selectedObject = objects[selectedIndex];
 
     return (
         <>
-            <Toolbar toolButtons={[<ImportButton setObjects={setObjects} />]} />
+            <Toolbar toolButtons={[<ImportButton setObjects={setObjects} setImportAlert={setImportAlert}/>]} />
 
-            <WebGPUCanvas />
+            <WebGPUCanvas canvasRef={canvasRef} space={space} importAlert={importAlert}/>
 
             {selectedObject && (
                 <Sidebar

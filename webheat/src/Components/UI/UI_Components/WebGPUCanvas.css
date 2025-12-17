@@ -3,7 +3,7 @@
 
     width: var(--canvas-width);
     height: var(--canvas-height);
-    background-color: black;
+    background-color: var(--canvas-bg);
     position: fixed;
     top: var(--canvas-top);
     left: var(--canvas-left);

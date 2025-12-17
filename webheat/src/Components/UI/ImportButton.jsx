@@ -4,7 +4,7 @@ import insertIcon from "../../assets/insert.png";
 import loadSTL from "../General/loadSTL.jsx"; // default import
 import Object3D from "../Physics/Object3D.jsx";
 
-const ImportButton = ({ setObjects }) => {
+const ImportButton = ({ setObjects, setImportAlert }) => {
     const fileInputRef = useRef(null);
 
     const handleButtonClick = () => {
@@ -20,13 +20,16 @@ const ImportButton = ({ setObjects }) => {
             const vertices = await loadSTL(file);
             const name = prompt("Give the object a name: ")
             const newObj = new Object3D(vertices, { x: 0, y: 0, z: 0 }, 300, 0.01);
+            newObj.setColor(.8, .1, .1, 1);
             newObj.name = name;
             setObjects(prevObjects => [...prevObjects, newObj]);
+            setImportAlert(prev => prev+1);
         } catch (err) {
             console.error("Failed to load STL:", err);
         }
 
         event.target.value = null; // reset input
+        
     };
 
     return (

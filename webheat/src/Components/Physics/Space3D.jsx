@@ -13,16 +13,19 @@ class Space3D {
         this.space_heat_diffusivity = space_heat_diffusivity;
         this.canvasRef = canvasRef;
         this.objects = objects;
-        this.boundaries = this.computeSpaceBoundaries();
+        this.boundaries = objects ? this.computeSpaceBoundaries() : null;
         
 
 
-        this.voxelized = this.createVoxelizedSpace();
+
+        this.voxelized = this.boundaries ? this.createVoxelizedSpace() : null;
 
 
     }
 
     computeSpaceBoundaries() {
+
+        if (!this.objects || this.objects.length === 0) return null;
 
         let minx = Infinity, miny = Infinity, minz = Infinity;
         let maxx = -Infinity, maxy = -Infinity, maxz = -Infinity;
@@ -96,8 +99,17 @@ class Space3D {
         return { temp: temp_grid, dif: dif_grid, nx, ny, nz, voxelSize, boundaries: this.boundaries };
     }
 
+    update() {
+        this.boundaries = this.objects.length !== 0 ? this.computeSpaceBoundaries() : null;
+        this.voxelized = this.boundaries ? this.createVoxelizedSpace() : null;
+        console.log("Finished Updating Space.");
+    }
+
+ 
+
 
 
 }
 
 
+export default Space3D;

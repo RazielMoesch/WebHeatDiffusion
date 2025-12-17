@@ -4,14 +4,16 @@
     position: fixed;
     left: var(--sidebar-left);
     top: var(--sidebar-top);
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsla(0, 0%, 90%, 50%);
 
     width: var(--sidebar-width);
     height: var(--sidebar-height);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 1rem;
     gap: .1rem;
+    z-index: 1000;
 }
 
 
